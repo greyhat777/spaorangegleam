@@ -1,0 +1,707 @@
+/*Colors */
+/*Fonts */
+/*Contact US Form */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+#feedback-page {
+  text-align: center; }
+
+#text-feedback {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: white;
+  text-align: center; }
+
+#form-main {
+  width: 100%;
+  float: left;
+  padding-top: 30px; }
+
+#form-div {
+  background-color: orange;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 500px;
+  position: relative;
+  margin-left: -260px;
+  top: -30px; }
+
+.feedback-input {
+  opacity: 0.9;
+  color: #0493bd;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  border: 3px solid #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.feedback-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px; }
+
+.focused {
+  color: #30aed6;
+  border: #30aed6 solid 3px; }
+
+/* Icons ---------------------------------- */
+#name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; }
+
+#name:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; }
+
+#email {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; }
+
+#email:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; }
+
+#comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat; }
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%; }
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color: white; }
+
+#button-blue {
+  font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#button-blue:hover {
+  background-color: transparent;
+  color: #0493bd; }
+
+.submit:hover {
+  color: #3498db; }
+
+.ease {
+  border-top: 3px #3c3c3c solid;
+  width: 0px;
+  height: 76px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease; }
+
+.submit:hover .ease {
+  width: 100%;
+  background-color: white; }
+
+@media only screen and (max-width: 580px) {
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%; } }
+
+/*End of Contact US Form */
+/*Contact US Form */
+.error {
+  background-color: rgba(255, 0, 0, 0.2); }
+
+.submissionMessage {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  display: block;
+  box-shadow: 0 0 2px white;
+  width: 60%; }
+
+/* ANIMATIONS
+============================================================================= */
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+  0% {
+    transform: rotateZ(0deg); }
+  20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out; }
+  40% {
+    transform: rotateZ(17deg); }
+  60% {
+    transform: rotateZ(16deg); }
+  100% {
+    transform: translateY(100%) rotateZ(17deg); } }
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%); } }
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+  to {
+    transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0; } }
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+  from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8); } }
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0); } }
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%); }
+  to {
+    transform: translateY(0); } }
+
+.ng-enter {
+  z-index: 8888; }
+
+.ng-leave {
+  z-index: 9999; }
+
+/* page specific animations ------------------------ */
+/* home -------------------------- */
+.home.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.home.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* about ------------------------ */
+.about.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.about.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* portfolio ------------------------ */
+.portfolio.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.portfolio.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* Services ------------------------ */
+.services.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.services.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* faqs ------------------------ */
+.faqs.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.faqs.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* blog ------------------------ */
+.blog.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.blog.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* deal ------------------------ */
+.deal.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.deal.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* getting started ------------------------ */
+.gettingstarted.ng-enter {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+.gettingstarted.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+/* contactus ---------------------- */
+.contactus.ng-leave {
+  transform-origin: 50% 50%;
+  animation: rotateOutNewspaper .5s both ease-in; }
+
+.contactus.ng-enter {
+  animation: slideInUp 0.5s both ease-in; }
+
+/* End of ANIMATIONS
+============================================================================= */
+/* CSSTerm.com Simple CSS menu */
+#navcontainer {
+  position: relative;
+  left: -30px; }
+
+#navlist li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px; }
+
+.foot {
+  position: relative;
+  left: -10px; }
+
+select#title3 {
+  position: relative;
+  margin-left: 11px; }
+
+.containerx {
+  position: relative;
+  width: 90%;
+  margin-left: 0%; }
+
+/*Contact Us Form */
+.header {
+  color: orange;
+  font-size: 27px;
+  padding: 10px; }
+
+.bigicon {
+  font-size: 35px;
+  color: orange; }
+
+/*End of Contact Us Form */
+p.footer {
+  position: relative;
+  margin-left: 11px; }
+
+/*Contact US Page Form */
+label#title1 {
+  position: relative;
+  left: 11px;
+  top: 7px; }
+
+input#Field1 {
+  position: relative;
+  left: 11px; }
+
+label#title3 {
+  position: relative;
+  left: 11px;
+  top: 7px; }
+
+input#Field3 {
+  position: relative;
+  left: 11px; }
+
+label#title4 {
+  position: relative;
+  left: 11px;
+  top: 7px; }
+
+textarea#Field4 {
+  position: relative;
+  margin-left: 11px;
+  width: 70%;
+  height: auto; }
+
+.contact_form input, .contact_form textarea {
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius: 2px; }
+
+.contact_form input:focus, .contact_form textarea:focus {
+  background: #fff;
+  border: 1px solid #555;
+  box-shadow: 0 0 3px #aaa; }
+
+/* Button Style */
+button.submit {
+  margin-left: 11px;
+  background-color: orange;
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(#6DB3E2));
+  background: -webkit-linear-gradient(top, orange, #6DB3E2);
+  background: -moz-linear-gradient(top, orange, #6DB3E2);
+  background: -ms-linear-gradient(top, orange, #6DB3E2);
+  background: -o-linear-gradient(top, orange, #6DB3E2);
+  background: linear-gradient(top, orange, #6DB3E2);
+  border: 1px solid #509111;
+  border-bottom: 1px solid #5b992b;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 orange;
+  -webkit-box-shadow: 0 1px 0 0 orange inset;
+  -moz-box-shadow: 0 1px 0 0 orange inset;
+  -ms-box-shadow: 0 1px 0 0 orange inset;
+  -o-box-shadow: 0 1px 0 0 orange inset;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 0 -1px 0 orange; }
+
+button.submit:hover {
+  opacity: .85;
+  cursor: pointer; }
+
+button.submit:active {
+  border: 1px solid orange;
+  box-shadow: 0 0 10px 5px orange inset;
+  -webkit-box-shadow: 0 0 10px 5px orange inset;
+  -moz-box-shadow: 0 0 10px 5px orange inset;
+  -ms-box-shadow: 0 0 10px 5px orange inset;
+  -o-box-shadow: 0 0 10px 5px orange inset; }
+
+/*End of Contact US Page Form */
+#homefix {
+  position: relative;
+  top: 60px; }
+
+img.logo {
+  position: relative;
+  top: 10px;
+  margin-left: 10px; }
+
+p.phone {
+  position: relative;
+  float: right;
+  left: 0px;
+  color: black;
+  top: 15px;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 17px; }
+
+p.email {
+  position: relative;
+  float: right;
+  left: -30px;
+  color: black;
+  top: 15px;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 17px; }
+
+p#title {
+  position: relative;
+  top: -10px; }
+
+p#email {
+  position: relative;
+  top: -20px; }
+
+p.smallformat {
+  position: relative;
+  margin-left: 11px; }
+
+h1.test {
+  position: relative;
+  color: red; }
+
+.maincontainer {
+  position: relative;
+  top: 31px;
+  background: white; }
+
+#topindex {
+  position: relative;
+  top: -10px;
+  left: 0px;
+  width: 600px;
+  height: 60px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  background: black; }
+
+.orangebox {
+  background-image: url("/images/banner1.png");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 60px; }
+
+.orangeboxfix {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 30px; }
+
+h1.indexpg {
+  position: relative;
+  color: white;
+  font: Helvetica, sans-serif;
+  margin: 10px;
+  font-size: 58px;
+  font-weight: bold; }
+
+p.workindex {
+  position: relative;
+  top: 15px;
+  margin-left: 10px;
+  color: white;
+  font-size: 20px; }
+
+p.portfolioindex {
+  position: relative;
+  top: 15px;
+  margin-left: 120px;
+  color: orange;
+  font-size: 20px; }
+
+footer {
+  position: relative;
+  background: white;
+  top: 0px;
+  width: 100%; }
+
+p.paragraph {
+  position: relative;
+  margin-left: 11px; }
+
+p.paragraphjesus {
+  position: relative;
+  margin-left: 10px; }
+
+h4 {
+  position: relative;
+  margin-left: 10px; }
+
+p.getstarted {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; }
+
+h4.formattedheadingabout {
+  top: 10px;
+  position: relative;
+  font-weight: bold; }
+
+h4.formattedheadingaboutx {
+  top: 0px;
+  position: relative;
+  font-weight: bold; }
+
+h4.formattedheadingaboutxx {
+  top: 0px;
+  position: relative;
+  font-weight: bold;
+  margin-left: 21px; }
+
+h4.heading1 {
+  position: relative;
+  margin-left: 20px; }
+
+.indexbutton {
+  position: relative;
+  text-align: center; }
+
+#hovereffect:hover {
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06); }
+
+#portfolioimgs {
+  position: relative;
+  margin-left: 10px; }
+
+#portfolioimgs:hover {
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06); }
+
+h1.headings {
+  position: relative;
+  color: orange;
+  margin-left: 10px;
+  font-weight: bold;
+  top: 10px; }
+
+p.format {
+  position: relative;
+  margin-left: 11px;
+  top: -12px; }
+
+h4#faqspage {
+  position: relative;
+  font-weight: bold; }
+
+h3.servicespage {
+  position: relative;
+  font-weight: bold;
+  margin-left: 11px; }
+
+h3.servicespageform {
+  position: relative;
+  font-weight: bold;
+  left: 235px; }
+
+a.links {
+  position: relative;
+  top: -15px;
+  margin-left: 20%; }
+
+a.portfoliolinks {
+  position: relative;
+  margin-left: 10%; }
+
+#jesus {
+  position: relative;
+  width: 140px;
+  margin-left: 10px;
+  top: 15px; }
+
+#chloe {
+  position: relative;
+  width: 140px;
+  margin-left: 10px;
+  top: 15px; }
+
+/*start media queries */
+@media only screen and (max-width: 500px) {
+  h3.servicespageform {
+    position: relative;
+    font-weight: bold;
+    left: 0px; }
+  .containerx {
+    position: relative;
+    left: 11px; }
+  button.submit {
+    position: relative;
+    margin-left: 20%; }
+  p.email {
+    position: relative;
+    float: right;
+    left: 0px;
+    color: black;
+    top: 15px;
+    font-weight: 700;
+    font-size: 14px; }
+  p.phone {
+    position: relative;
+    float: right;
+    left: 0px;
+    color: black;
+    top: 15px;
+    font-weight: 700;
+    font-size: 14px; }
+  #jesus {
+    position: relative;
+    width: 140px;
+    margin-left: 10px;
+    top: -5px; }
+  p.paragraphjesus {
+    position: relative;
+    left: 5px;
+    top: -20px;
+    max-width: 270px;
+    text-align: left; }
+  h4#jesusbiopage {
+    position: relative;
+    top: -15px;
+    left: 5px; }
+  footer {
+    position: relative;
+    background: white;
+    top: -0px;
+    width: 100%; }
+  #jesus {
+    position: relative;
+    width: 140px; }
+  #chloe {
+    position: relative;
+    width: 140px; }
+  h1.indexpg {
+    position: relative;
+    color: white;
+    font: Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 39px;
+    font-weight: bold; }
+  p.workindex {
+    position: relative;
+    top: 0px;
+    color: white;
+    font-size: 18px; }
+  p.portfolioindex {
+    position: relative;
+    top: -25px;
+    left: -40px; }
+  #homefix {
+    position: relative;
+    top: 0px; } }
+
+/*End media Queries*/

@@ -1,0 +1,41 @@
+<br/><br/>
+<h1 class="headings">Contact Us</h1>
+<br/>
+<div class="row">
+<div class="col-md-4">
+              <h3 class="servicespage">Contact Info</h3>
+                <div class="address">
+                  <p class="paragraph"><span class="glyphicon glyphicon-earphone"></span> (559)376-0051</p> 
+                  <p class="paragraph"><span class="glyphicon glyphicon-envelope"></span> info@orangegleam.com</p>
+                </div>
+</div>
+<div class="col-md-8">
+
+<div class="containerx">
+    <div class="row">
+        <div class="col-md-12">
+          <h3 class="servicespageform">Contact Form</h3>
+            <div id="form-main">
+              <div id="form-div">
+                <form ng-submit="submitForm()" ng-controller="FormController" novalidate>
+                  <label for="name">Name</label>
+                  <input type="text" name="name" ng-model="formData.name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" required>
+                  <label for="email" required>E-mail</label>
+                  <input type="email" name="email" ng-model="formData.email" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email">
+                  <label for="message" required>Message</label>
+                  <textarea name="message"  ng-model="formData.message" cols="30" rows="10" placeholder="Enter your message here. We will get back to you shortly."></textarea>
+                  <input type="submit" value="Send!" name="submit" id="button-blue" >
+                  <div class="ease"></div>
+                  <div ng-class="{'submissionMessage' : submission}" ng-bind="submissionMessage"></div>
+                </form>
+               </div> 
+            </div>
+        </div>
+    </div>
+</div>
+   
+
+</div>
+</div>
+
+
